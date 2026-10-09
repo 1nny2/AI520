@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AlphaEvolve：用可验证指标做 AI 科研项目 · AI 知识库</title><link rel="stylesheet" href="../阅读版/样式.css"></head>
+<body><div class="article-wrap">
+<nav class="topbar"><a class="brand" href="../打开知识库.html"><span class="brand-icon">知</span>AI 知识库</a><a href="../打开知识库.html">← 返回首页</a></nav>
+<main class="paper" id="summary">
+<header class="article-heading"><div class="eyebrow">AI 知识笔记 <span> / </span> 002</div>
+<h1>AlphaEvolve：用可验证指标做 AI 科研项目</h1><div class="date-line">收录于 2026年10月09日<span>原文发布日期：2025年05月14日</span></div>
+<div class="tags"><a class="tag" href="../打开知识库.html#科研入门">科研入门</a><a class="tag" href="../打开知识库.html#项目实践">项目实践</a><a class="tag" href="../打开知识库.html#面试">面试</a></div></header>
+<section class="takeaway"><div class="section-kicker">一句话总结</div><p>AlphaEvolve 展示了“模型提出代码—程序自动验证—保留优胜方案”的科研路径，大学生可以借鉴其方法，把 AI 项目做成有基线、有评测、有复现记录的实验。</p></section>
+<section id="key-points"><div class="section-title"><span>01</span><h2>关键信息</h2></div><div class="point"><span class="point-number">01</span><p><strong>创新点是生成与验证形成闭环。</strong> 官方介绍，AlphaEvolve 将 Gemini 模型、自动评估器和进化式搜索结合起来，生成候选算法，运行并打分，再利用优秀方案继续迭代；并非只让模型回答一次问题。</p></div><div class="point"><span class="point-number">02</span><p><strong>适合能够明确打分的问题。</strong> 系统依赖可以自动衡量正确性和质量的指标，因此数学、算法和计算优化是重要应用方向。选题能否可靠验证，与模型能否生成方案同样重要。</p></div><div class="point"><span class="point-number">03</span><p><strong>性能提升要看指标范围。</strong> 官方报告某个 Gemini 矩阵运算内核提速 23%，对应整体训练时间减少 1%。局部组件提升不能直接当成整个系统的收益。</p></div><div class="point"><span class="point-number">04</span><p><strong>研究进展不等于人人都能直接使用产品。</strong> 发布时团队计划面向部分学术用户开放早期体验。本文记录的是当时的研究发布，不保证目前的免费额度、申请资格或产品可用性。</p></div></section>
+<section id="scenarios"><div class="section-title"><span>02</span><h2>用到什么场景</h2></div><p>以下为整理者给大学生的应用建议，不是原文承诺。</p><div class="table-wrap"><table><thead><tr><th>场景</th><th>可复用内容</th></tr></thead><tbody><tr><td>科研入门</td><td>选一个能自动验证的小问题，例如公开数据上的调度或路径优化。先确定正确性约束、基线算法与主要指标，再让 AI 提议改进。</td></tr><tr><td>项目实践</td><td>做一个两周项目：保存候选代码、随机种子、运行环境、失败案例及耗时；用未参与调参的测试实例检查效果，并计入模型调用成本。</td></tr><tr><td>面试</td><td>用“问题—基线—改进—实验—局限”讲项目。准备回答：提升是否可复现、评测是否泄漏、为什么局部提速不等于整体提速。</td></tr></tbody></table></div></section>
+<section class="reading-note" id="notes"><div class="section-kicker">阅读辨析 · 观点与补充</div><p>这是研发机构的官方成果介绍，数字反映其特定环境下的报告结果，并不保证在学生设备或其他数据上复现。学生项目建议是对方法的借鉴，不是要求复现完整 AlphaEvolve，更不能把自动评测通过等同于所有现实条件下正确。</p></section>
+<div class="article-record">笔记 002 · 首次保存 2026年10月09日 · 内容更新 2026年10月09日<br>来源：Google DeepMind；AlphaEvolve team；官方研究发布<br><a href="https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/" target="_blank" rel="noopener noreferrer">打开官方原文 ↗</a></div>
+<div class="capture-footer">AI 知识库 / 002　·　原文与文字备份见同编号阅读页</div>
+</main>
+<section class="source-box"><details id="original"><summary>来源与原文入口 <span>查看出处与收录说明</span></summary><div class="original-text"><p>原文标题：AlphaEvolve: A Gemini-powered coding agent for designing advanced algorithms。</p><p><a href="https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/" target="_blank" rel="noopener noreferrer">阅读 Google DeepMind 官方原文</a></p><p>核验日期：2026年10月09日。已核对页面发布日期、系统机制及 23%／1% 的指标含义。本页为原创中文摘要；第三方完整原文请通过上方链接阅读。</p></div></details></section>
+<footer class="article-actions"><a class="button primary" href="../打开知识库.html">返回知识库</a><a class="button" href="../阅读图片/002-AlphaEvolve-用可验证指标做AI科研项目.png">查看总结长图</a><a class="button" href="../文章/002-AlphaEvolve-用可验证指标做AI科研项目.md">文字备份</a></footer>
+</div><script>if(new URLSearchParams(location.search).has("capture"))document.body.classList.add("capture");</script></body></html>
